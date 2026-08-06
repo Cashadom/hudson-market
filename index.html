@@ -551,10 +551,26 @@
       z-index:-1;
       transform:skewX(-6deg);
     }
-    .product-badge.red{background:#c0392b;}
-    .product-badge.green{background:#4f6b3a;}
-    .product-badge.blue{background:#2767a8;}
-    .product-badge.orange{background:#d87516;}
+    .product-badge.red{
+  background:#c0392b;
+}
+
+.product-badge.green{
+  background:#4f6b3a;
+}
+
+.product-badge.blue{
+  background:#2767a8;
+}
+
+.product-badge.provence{
+  background:#8E6BBE; /* Mauve Provence */
+  color:#fff;
+}
+
+.product-badge.orange{
+  background:#d87516;
+}
 
     .product .ref{
       font-size:.65rem;
@@ -1420,14 +1436,16 @@ function renderProducts() {
     const badgeNormalized = badgeValue.toUpperCase();
     let badgeClass = "";
     if (badgeNormalized === "NOUVEAU") {
-      badgeClass = "blue";
-    } else if (badgeNormalized === "TOP VENTE" || badgeNormalized === "TOP VENTES") {
-      badgeClass = "green";
-    } else if (badgeNormalized === "DERNIERS STOCKS") {
-      badgeClass = "orange";
-    } else if (badgeNormalized.startsWith("-")) {
-      badgeClass = "red";
-    }
+  badgeClass = "blue";
+} else if (badgeNormalized === "TOP VENTE" || badgeNormalized === "TOP VENTES") {
+  badgeClass = "green";
+} else if (badgeNormalized === "DERNIERS STOCKS") {
+  badgeClass = "orange";
+} else if (badgeNormalized === "PROVENCE") {
+  badgeClass = "provence";
+} else if (badgeNormalized.startsWith("-")) {
+  badgeClass = "red";
+}
     const badgeHTML = badgeClass
       ? `<span class="product-badge ${badgeClass}">${badgeValue}</span>`
       : "";
