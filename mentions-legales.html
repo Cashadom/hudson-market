@@ -25,250 +25,268 @@
   <meta property="og:url" content="https://hudson-market.fr/mentions-legales.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hudson Market" />
+  <meta name="theme-color" content="#172A5B" />
 
   <style>
-    /* ===== IMPORT POLICES (harmonisées avec index.html) ===== */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    /* ============================================================
+       NOUVELLE IDENTITÉ HUDSON - STYLE MODERNE & CORPORATE
+       Version page Mentions légales
+       ============================================================ */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
     *{margin:0;padding:0;box-sizing:border-box}
 
     :root{
-      --cream:#F6F1E7;
-      --paper:#F0EBE0;
-      --wood:#C8A97E;
-      --olive:#65704A;
-      --olive-dark:#4A5435;
-      --terracotta:#A85B3B;
-      --stone:#D7D2C8;
-      --ink:#2D2A24;
-      --white:#FFFCF7;
-      --red:#B83A2E;
-      --red-dark:#8F2D22;
-      --shadow:0 8px 30px rgba(45,42,36,.08);
+      /* Hudson colors */
+      --hudson-blue: #172A5B;
+      --hudson-river: #2869A5;
+      --hudson-light: #55ADD1;
+      --hudson-yellow: #FFD000;
+      --hudson-white: #FFFFFF;
+      --hudson-bg: #F7F9FC;
+      --hudson-text: #172A5B;
+      --hudson-gray: #64748B;
+      --hudson-border: #E3EAF2;
+      --hudson-shadow: 0 4px 12px rgba(23, 42, 91, 0.08);
+      --hudson-shadow-hover: 0 8px 24px rgba(23, 42, 91, 0.15);
     }
 
-    /* ===== FOND AVEC footer.png EN ARRIÈRE-PLAN ===== */
     body{
-      font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-      color:var(--ink);
-      min-height:100vh;
-      background:linear-gradient(180deg,rgba(45,42,36,.15) 0%,rgba(45,42,36,.75) 100%),
-                  url('ranch.png') center/cover fixed no-repeat;
-      background-size:cover;
-      display:flex;
-      flex-direction:column;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--hudson-bg);
+      color: var(--hudson-text);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     h1,h2,h3,h4,.serif{
-      font-family:'Cormorant Garamond',Georgia,"Times New Roman",serif;
-      font-weight:600;
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
     }
 
-    .wrap{max-width:820px;margin:0 auto;padding:0 20px;flex:1;display:flex;flex-direction:column;}
+    .wrap{
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
 
     /* ===== HEADER ===== */
     header{
-      background:rgba(255,252,247,.95);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(200,169,126,.2);
-      padding:16px 0;
-      box-shadow:0 2px 12px rgba(45,42,36,.04);
+      background: var(--hudson-white);
+      border-bottom: 3px solid var(--hudson-blue);
+      padding: 14px 0;
+      box-shadow: 0 2px 12px rgba(23, 42, 91, 0.04);
     }
     .header-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
     }
     .logo{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      color:var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--hudson-text);
     }
     .logo img{
-      height:40px;
-      width:auto;
-      display:block;
+      height: 40px;
+      width: auto;
+      display: block;
     }
     .logo h1{
-      font-family:'Cormorant Garamond',Georgia,serif;
-      font-size:1.3rem;
-      font-weight:700;
-      letter-spacing:-.02em;
-      color:var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--hudson-blue);
     }
     .logo h1 small{
-      display:block;
-      font-family:Inter,sans-serif;
-      font-weight:400;
-      font-size:.55rem;
-      color:var(--olive);
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      margin-top:2px;
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.55rem;
+      color: var(--hudson-gray);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 2px;
     }
     .back-link{
-      color:var(--olive);
-      text-decoration:none;
-      font-weight:600;
-      font-size:.9rem;
-      padding:8px 18px;
-      border:1px solid rgba(200,169,126,.25);
-      border-radius:99px;
-      transition:.15s;
+      color: var(--hudson-blue);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 8px 18px;
+      border: 1px solid var(--hudson-border);
+      border-radius: 50px;
+      transition: all .15s;
+      font-family: 'Inter', sans-serif;
     }
     .back-link:hover{
-      background:var(--olive);
-      color:#fff;
-      border-color:var(--olive);
+      background: var(--hudson-blue);
+      color: var(--hudson-white);
+      border-color: var(--hudson-blue);
     }
 
     /* ===== CONTENU ===== */
     .content{
-      background:rgba(255,252,247,.94);
-      backdrop-filter:blur(6px);
-      border-radius:16px;
-      padding:40px 44px;
-      margin:32px 0 48px;
-      box-shadow:var(--shadow);
-      border:1px solid rgba(200,169,126,.15);
-      flex:1;
+      background: var(--hudson-white);
+      border-radius: 12px;
+      padding: 40px 44px;
+      margin: 32px 0 48px;
+      box-shadow: var(--hudson-shadow);
+      border: 1px solid var(--hudson-border);
+      flex: 1;
     }
     .content h1{
-      font-family:'Cormorant Garamond',Georgia,serif;
-      font-size:2.2rem;
-      font-weight:700;
-      color:var(--olive-dark);
-      margin-bottom:6px;
-      letter-spacing:-.02em;
+      font-family: 'Inter', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--hudson-blue);
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
     }
     .content .sub{
-      color:#999;
-      font-size:.85rem;
-      margin-bottom:28px;
-      border-bottom:1px solid rgba(200,169,126,.15);
-      padding-bottom:16px;
+      color: var(--hudson-gray);
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--hudson-border);
+      padding-bottom: 16px;
+      font-family: 'JetBrains Mono', monospace;
     }
     .content h2{
-      font-family:'Cormorant Garamond',Georgia,serif;
-      font-size:1.3rem;
-      font-weight:600;
-      color:var(--olive-dark);
-      margin-top:32px;
-      margin-bottom:8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--hudson-blue);
+      margin-top: 32px;
+      margin-bottom: 8px;
     }
-    .content h2:first-of-type{margin-top:0;}
+    .content h2:first-of-type{margin-top: 0;}
     .content p{
-      color:#444;
-      margin-bottom:12px;
+      color: var(--hudson-gray);
+      margin-bottom: 12px;
+      line-height: 1.7;
     }
     .content ul{
-      padding-left:24px;
-      margin-bottom:12px;
-      color:#444;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      color: var(--hudson-gray);
+      line-height: 1.7;
     }
-    .content ul li{margin-bottom:4px;}
+    .content ul li{margin-bottom: 4px;}
     .content .highlight{
-      background:rgba(246,241,231,.7);
-      padding:16px 20px;
-      border-radius:10px;
-      border-left:4px solid var(--olive);
-      margin:16px 0;
+      background: #EEF5FA;
+      padding: 16px 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--hudson-river);
+      margin: 16px 0;
     }
-    .content .highlight p{margin:0;}
+    .content .highlight p{
+      margin: 0;
+      color: var(--hudson-text);
+    }
     .content a{
-      color:var(--olive-dark);
-      text-decoration:underline;
-      text-underline-offset:2px;
+      color: var(--hudson-river);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
-    .content a:hover{color:var(--terracotta);}
+    .content a:hover{
+      color: var(--hudson-blue);
+    }
 
-    /* ===== FOOTER MINIMAL (sans image) ===== */
+    /* ===== FOOTER MINIMAL ===== */
     .footer-mini{
-      text-align:center;
-      padding:20px 0 24px;
-      color:rgba(255,255,255,.5);
-      font-size:.72rem;
-      font-family:Inter,sans-serif;
-      letter-spacing:.03em;
-      margin-top:auto;
+      text-align: center;
+      padding: 20px 0 24px;
+      color: var(--hudson-gray);
+      font-size: 0.72rem;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 0.03em;
+      margin-top: auto;
+      border-top: 1px solid var(--hudson-border);
+      background: var(--hudson-white);
     }
     .footer-mini a{
-      color:rgba(255,255,255,.55);
-      text-decoration:none;
+      color: var(--hudson-river);
+      text-decoration: none;
     }
     .footer-mini a:hover{
-      color:#fff;
-      text-decoration:underline;
+      color: var(--hudson-blue);
+      text-decoration: underline;
     }
 
     /* ===== BANDEAU COOKIES ===== */
     .cookie-banner{
-      position:fixed;
-      bottom:0;
-      left:0;
-      right:0;
-      background:var(--ink);
-      color:var(--white);
-      padding:16px 20px;
-      z-index:1000;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
-      gap:12px;
-      border-top:3px solid var(--terracotta);
-      box-shadow:0 -10px 40px rgba(0,0,0,.25);
-      transform:translateY(100%);
-      transition:transform .4s ease;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--hudson-blue);
+      color: var(--hudson-white);
+      padding: 16px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 3px solid var(--hudson-yellow);
+      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.2);
+      transform: translateY(100%);
+      transition: transform .4s ease;
     }
     .cookie-banner.show{
-      transform:translateY(0);
+      transform: translateY(0);
     }
     .cookie-banner p{
-      font-size:.85rem;
-      opacity:.85;
-      max-width:600px;
-      font-family:Inter,sans-serif;
+      font-size: 0.85rem;
+      opacity: 0.9;
+      max-width: 600px;
+      font-family: 'Inter', sans-serif;
     }
     .cookie-banner p a{
-      color:var(--terracotta);
-      text-decoration:underline;
+      color: var(--hudson-yellow);
+      text-decoration: underline;
     }
     .cookie-banner .cookie-btn{
-      background:var(--terracotta);
-      color:#fff;
-      border:0;
-      padding:10px 28px;
-      border-radius:4px;
-      font-weight:700;
-      cursor:pointer;
-      transition:.15s;
-      font-family:Inter,sans-serif;
-      text-transform:uppercase;
-      letter-spacing:.04em;
-      font-size:.85rem;
-      white-space:nowrap;
-      flex-shrink:0;
+      background: var(--hudson-yellow);
+      color: var(--hudson-blue);
+      border: 0;
+      padding: 10px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .15s;
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
     .cookie-banner .cookie-btn:hover{
-      background:var(--red-dark);
-      transform:scale(1.02);
+      transform: scale(1.02);
+      box-shadow: 0 4px 16px rgba(255, 208, 0, 0.3);
     }
 
     /* ===== RESPONSIVE ===== */
     @media(max-width:640px){
-      .content{padding:24px 20px;margin:20px 0 32px;}
-      .content h1{font-size:1.6rem;}
-      .header-inner{flex-direction:column;align-items:flex-start;}
-      .back-link{font-size:.8rem;padding:6px 14px;}
-      .cookie-banner{flex-direction:column;text-align:center;padding:14px 16px;}
-      .cookie-banner p{font-size:.78rem;}
-      .cookie-banner .cookie-btn{width:100%;justify-content:center;}
-      .footer-mini{padding:14px 0 20px;font-size:.65rem;}
+      .content{padding: 24px 20px; margin: 20px 0 32px;}
+      .content h1{font-size: 1.6rem;}
+      .header-inner{flex-direction: column; align-items: flex-start;}
+      .back-link{font-size: 0.8rem; padding: 6px 14px;}
+      .cookie-banner{flex-direction: column; text-align: center; padding: 14px 16px;}
+      .cookie-banner p{font-size: 0.78rem;}
+      .cookie-banner .cookie-btn{width: 100%; justify-content: center;}
+      .footer-mini{padding: 14px 0 20px; font-size: 0.65rem;}
     }
   </style>
 </head>
@@ -419,7 +437,7 @@
 
 <script>
   // ============================================================
-  // GESTION DU BANDEAU COOKIES
+  // GESTION DU BANDEAU COOKIES - IDENTIQUE
   // ============================================================
   (function() {
     const banner = document.getElementById('cookieBanner');
